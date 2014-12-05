@@ -8,8 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,112 +41,82 @@
     </nav>
 
    	<div class="container">
-   		<div class="starter-template">
-	    	<div class="panel panel-default">
-			  <div class="panel-body">
-			    <table id="mytable" class="table table-bordred table-striped">
-                   
-                   <thead>
-                   
-                   <th><input type="checkbox" id="checkall" /></th>
-                   <th>First Name</th>
-                    <th>Last Name</th>
-                     <th>Address</th>
-                      <th>Edit</th>
-                       <th>Delete</th>
-                   </thead>
-				    <tbody>
-				    
-				    <tr>
-				    <td><input type="checkbox" class="checkthis" /></td>
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				        <tr>
-				    <td><input type="checkbox" class="checkthis" /></td>
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				        <tr>
-				    <td><input type="checkbox" class="checkthis" /></td>
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				    
-				        <tr>
-				    <td><input type="checkbox" class="checkthis" /></td>
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				    
-				        <tr>
-				    <td><input type="checkbox" class="checkthis" /></td>
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				   
-				    
-				   
-				    
-				    </tbody>
-				        
-				</table>
-				<div class="row col-md-6 col-md-offset-2 custyle">
-    <table class="table table-striped custab">
-    <thead>
-    <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b> Add new categories</a>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Parent ID</th>
-            <th class="text-center">Action</th>
-        </tr>
-    </thead>
-            <tr>
-                <td>1</td>
-                <td>News</td>
-                <td>News Cate</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Products</td>
-                <td>Main Products</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Blogs</td>
-                <td>Parent Blogs</td>
-                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
-            </tr>
-    </table>
-			  </div>
-			</div>        
+   		<div class="panel panel-primary">
+                        <div class="panel-heading">Faculty</div>
+                        <div class="panel-body">
+                           
+                           
+
+                            <form class="form-inline pull-right" role="form">
+
+                                <!-- <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Show Deleted
+                                        </label>
+                                    </div> -->
+                                <div class="form-group">
+                                                        <label type="label" style ="color: black;
+font-size: 50px;
+background-color: transparent;"class= "label label-primary" style +>Customers</label>
+                                	 <button type="button" style="margin-right: 10px;" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i> Add New Customer</button>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                            </form>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div  class="panel-footer" >
+                            <ul style= "margin-left: 409px;margin-right: auto;" class="pagination pagination-lg ">
+                                <li><a href="#">&laquo;</a>
+                                </li>
+                                <li><a href="#">1</a>
+                                </li>
+                                <li><a href="#">2</a>
+                                </li>
+                                <li><a href="#">3</a>
+                                </li>                              
+                                <li><a href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
       	</div>
 
 	</div>
