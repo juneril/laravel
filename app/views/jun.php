@@ -28,15 +28,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Customers App</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#countries">Countries</a></li>
           </ul>
+          <div class="btn-group" style= "margin-left: 472px;">
+      <button class="btn btn-default" type="button">Username</button>
+      <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+      </ul>
+  </div>
         </div><!--/.nav-collapse -->
+
+  
       </div>
     </nav>
 
@@ -55,13 +70,11 @@
                                         </label>
                                     </div> -->
                                 <div class="form-group">
-                                                        <label type="label" style ="color: black;
-font-size: 50px;
-background-color: transparent;"class= "label label-primary" style +>Customers</label>
-                                	 <button type="button" style="margin-right: 10px;" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i> Add New Customer</button>
+                                                        <label type="label" style ="color: black;font-size: 50px;background-color: transparent;margin-right: 418px;"class= "label label-primary" style +>Customers</label>
+                                	 <button type="button" style="margin-right: 10px;" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>Add New Customer</button>
                                     <input type="text" class="form-control" placeholder="Search">
                                 </div>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                             
                             </form>
                         </div>
 
@@ -69,38 +82,61 @@ background-color: transparent;"class= "label label-primary" style +>Customers</l
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>Company Name</th>
                                     <th>First Name</th>
                                     <th>Last Name</th>
-                                    <th>Username</th>
+                                    <th>Category</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>Orange Design Company</td>
+                                    <td>Orange</td>
+                                    <td>Company</td>
+                                    <td>Discounter</td>
+                                       <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>AA Software System</td>
+                                    <td>Software</td>
+                                    <td>System</td>
+                                    <td>Reselter</td>
+                                       <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>Adnatives New Media</td>
+                                    <td>Ferid</td>
+                                    <td>Demir</td>
+                                    <td>Reseller</td>
+                                       <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>Prime Teknoloji</td>
+                                    <td>Cagatay</td>
+                                    <td>Civii</td>
+                                    <td>End User</td>
+                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
                                 </tr>
-                            </tbody>
+                                     <tr>
+                                    <td>E-Commerce System</td>
+                                    <td>Max</td>
+                                    <td>Mustermann</td>
+                                    <td>End User</td>
+                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                </tr>
+                                     <tr>
+                                    <td>Pina Teknoloji</td>
+                                    <td>Mehmet</td>
+                                    <td>Celiksoy</td>
+                                    <td>End User</td>
+                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                </tr>
+            
+            
+            
+             
+                    </tbody>
                         </table>
                         <div  class="panel-footer" >
                             <ul style= "margin-left: 409px;margin-right: auto;" class="pagination pagination-lg ">
