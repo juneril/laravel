@@ -16,5 +16,13 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/jun', 'HomeController@showJun');
+Route::get('/customers', 'HomeController@showCustomers');
 Route::get('/hello', 'HomeController@showWelcome');
+Route::get('/registernewcustomer','HomeController@showRegistration');
+Route::get('/jun','HomeController@showLogin');
+Route::get('/home','HomeController@showHome');
+
+
+Route::post('/jun','HomeController@InsertSignup');
+Route::post('/login','HomeController@Login');
+

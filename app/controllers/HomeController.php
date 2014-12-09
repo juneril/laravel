@@ -21,10 +21,41 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
-	public function showJun()
+	public function showCustomers()
+	{
+		
+		return View::make('customers');
+	}
+	public function showRegistration()
+	{
+		
+		return View::make('registernewcustomer');
+	}
+	public function showLogin()
 	{
 		
 		return View::make('jun');
+	}
+	public function showHome()
+	{
+		
+		return View::make('home');
+	}
+	public function InsertSignup()
+	{
+		$data = Input::all();
+
+		// print_r($data['user']);
+		// die();
+		return Accounts::InsertData($data['user']);
+	}
+	public function Login()
+	{
+		$data = Input::all();
+
+		// print_r($data['user']);
+		// die();
+		return Accounts::Login($data['user']);
 	}
 
 }
