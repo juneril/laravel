@@ -47,6 +47,12 @@ class HomeController extends BaseController {
 
 		return Accounts::InsertData($data['user']);
 	}
+	public function InsertCustomer()
+	{
+		$data = Input::all();
+
+		return Customers::InsertData($data['customer']);
+	}
 	public  function Login(){
 
 

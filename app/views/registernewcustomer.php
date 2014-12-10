@@ -68,21 +68,23 @@
                         <div class="col-xs-6 col-md-6">
                             <input type="text" name="lastname" value="" class="form-control input-lg" id="lastname"placeholder="Last Name"  />                        </div>
                     </div>
-                    <input type="text" name="address" value="" class="form-control input-lg" id="address" placeholder="Address"  /><input type="text" name="faname" value="" class="form-control input-lg" placeholder="Fathers Name"  /><input type="text" name="maname" value="" class="form-control input-lg" placeholder="Mothers Name"  />                    <label>Birth Date</label>                    <div class="row">
+                    <input type="text" name="address" value="" class="form-control input-lg" id="address" placeholder="Address"  />
+                    <input type="text" name="faname" value="" class="form-control input-lg" id="fathersname" placeholder="Fathers Name"  />
+                    <input type="text" name="maname" value="" class="form-control input-lg" id= "mothersname" placeholder="Mothers Name"  />                    <label>Birth Date</label>                    <div class="row">
                         <div class="col-xs-4 col-md-4">
                             <select name="month" id="month" class = "form-control input-lg">
-<option value="01">Jan</option>
-<option value="02">Feb</option>
-<option value="03">Mar</option>
-<option value="04">Apr</option>
-<option value="05">May</option>
-<option value="06">Jun</option>
-<option value="07">Jul</option>
-<option value="08">Aug</option>
-<option value="09">Sep</option>
-<option value="10">Oct</option>
-<option value="11">Nov</option>
-<option value="12">Dec</option>
+<option >Jan</option>
+<option >Feb</option>
+<option >Mar</option>
+<option >Apr</option>
+<option >May</option>
+<option >Jun</option>
+<option >Jul</option>
+<option >Aug</option>
+<option >Sep</option>
+<option >Oct</option>
+<option >Nov</option>
+<option >Dec</option>
 </select>                        </div>
                         <div class="col-xs-4 col-md-4">
                             <select name="day" id="day" class = "form-control input-lg">
@@ -102,16 +104,16 @@ echo  "<option>$i</option>";}
 
 </select>                        </div>
                     </div>
-                     <label>Gender : </label>                    <label class="radio-inline">
-                        <input type="radio"  id="gender" name="gender" value="M" id=male />                        Male
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" id="gender" name="gender" value="F" id=female />                        Female
-                    </label>
+                     <label>Gender : </label>   <label class="radio-inline">
+                       <input type="radio" id="genderMale" name="sex" value="Male" checked>Male
+                       </label><label class="radio-inline">
+                         <input type="radio" id= "genderFemale" name="sex" value="Female">Female
+                       </label>
+                      
                     <br />
              
-                    <button  class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
-                        Submit</button>
+                        <a href="javascript:insertcustomers()"  id="btn-signup" class="btn btn-lg btn-primary btn-block signup-btn" ></i> &nbsp Submit</a>
+                        
             </form>          
           </div>
 </div>            
@@ -125,5 +127,6 @@ echo  "<option>$i</option>";}
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="js/insertcustomer.js"></script>
   </body>
 </html>

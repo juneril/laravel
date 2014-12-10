@@ -25,4 +25,5 @@ Route::get('/home','HomeController@showHome');
 
 Route::post('/jun','HomeController@InsertSignup');
 Route::post('/login','HomeController@Login');
+Route::post('/registernewcustomer','HomeController@InsertCustomer');
 

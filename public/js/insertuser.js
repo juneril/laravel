@@ -24,6 +24,16 @@ function Create(){
 }
 
 function Login(){
+
+	if($('#login-username').val() == ''){
+		alert('Please enter username');
+		return;
+	}
+	if($('#login-password').val() == ''){
+		alert('Please enter Password');
+		return;
+	}
+
 	var obj=new Object();
 	obj.username= $('#login-username').val();
 	obj.password=$('#login-password').val();
