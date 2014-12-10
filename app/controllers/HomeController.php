@@ -45,17 +45,36 @@ class HomeController extends BaseController {
 	{
 		$data = Input::all();
 
-		// print_r($data['user']);
-		// die();
 		return Accounts::InsertData($data['user']);
 	}
-	public function Login()
-	{
-		$data = Input::all();
+	public  function Login(){
 
-		// print_r($data['user']);
-		// die();
-		return Accounts::Login($data['user']);
-	}
 
+
+$Data= Input::all();
+// print_r($Data);
+// print_r($Data['user']);
+
+ 	$userdata = array(
+	    'email'  => $Data['user']['username'],
+	    'password' => $Data['user']['password']
+	);
+
+   if (Auth::attempt($userdata)) {
+	   	$result['success'] = true;
+	    $result['msg'] = 'Succesfully Login';
+   } else {
+   		$result['success'] = false;
+    	$result['msg'] = 'WARNING: Unknown error occur while changing password!';
+
+ 
+     return Redirect::to('/home')
+     ->with('flash_error', 'Your username/password combination was incorrect.');
+   }
+   return $result;
+
+   
+	
+
+}
 }

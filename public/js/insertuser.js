@@ -37,10 +37,18 @@ function Login(){
 		},
 		success: function(response){
 
+			if(response.success == true){
+				window.location.href="/home";
+
+			}else{
+				window.location.href="/jun";
+			}
+
 			console.log(response);
 
 		},
 		error: function(err){
+
 			console.log(err);
 		}
 	});

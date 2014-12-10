@@ -64,13 +64,13 @@
                    
                     <div class="row">
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name"  />                        </div>
+                            <input type="text" name="firstname" value="" class="form-control input-lg" id="firstname" placeholder="First Name"  />                        </div>
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name"  />                        </div>
+                            <input type="text" name="lastname" value="" class="form-control input-lg" id="lastname"placeholder="Last Name"  />                        </div>
                     </div>
-                    <input type="text" name="address" value="" class="form-control input-lg" placeholder="Address"  /><input type="text" name="faname" value="" class="form-control input-lg" placeholder="Fathers Name"  /><input type="text" name="maname" value="" class="form-control input-lg" placeholder="Mothers Name"  />                    <label>Birth Date</label>                    <div class="row">
+                    <input type="text" name="address" value="" class="form-control input-lg" id="address" placeholder="Address"  /><input type="text" name="faname" value="" class="form-control input-lg" placeholder="Fathers Name"  /><input type="text" name="maname" value="" class="form-control input-lg" placeholder="Mothers Name"  />                    <label>Birth Date</label>                    <div class="row">
                         <div class="col-xs-4 col-md-4">
-                            <select name="month" class = "form-control input-lg">
+                            <select name="month" id="month" class = "form-control input-lg">
 <option value="01">Jan</option>
 <option value="02">Feb</option>
 <option value="03">Mar</option>
@@ -85,7 +85,7 @@
 <option value="12">Dec</option>
 </select>                        </div>
                         <div class="col-xs-4 col-md-4">
-                            <select name="day" class = "form-control input-lg">
+                            <select name="day" id="day" class = "form-control input-lg">
 
                               <?php
 for($i=1;$i<=31;$i++){
@@ -93,7 +93,7 @@ echo  "<option >$i</option>";}
                               ?>
 </select>                        </div>
                         <div class="col-xs-4 col-md-4">
-                            <select name="year" class = "form-control input-lg">
+                            <select name="year" id = "year" class = "form-control input-lg">
 
                               <?php
 for($i=1935;$i<=date("Y");$i++){
@@ -103,14 +103,14 @@ echo  "<option>$i</option>";}
 </select>                        </div>
                     </div>
                      <label>Gender : </label>                    <label class="radio-inline">
-                        <input type="radio" name="gender" value="M" id=male />                        Male
+                        <input type="radio"  id="gender" name="gender" value="M" id=male />                        Male
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="gender" value="F" id=female />                        Female
+                        <input type="radio" id="gender" name="gender" value="F" id=female />                        Female
                     </label>
                     <br />
              
-                    <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
+                    <button  class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
                         Submit</button>
             </form>          
           </div>

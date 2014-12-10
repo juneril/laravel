@@ -60,7 +60,7 @@
                                     <!-- Button -->
 
                                     <div class="col-sm-12 controls">
-                                      <a href="javascript:Login()" id="btn-login" href="/home" class="btn btn-success">Login  </a>
+                                      <a href="javascript:Login()" id="btn-login"  class="btn btn-success">Login  </a>
                                       <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
 
                                     </div>
